@@ -1,9 +1,16 @@
-n = int(input('Enter your input->'))
 
-# Check if input is a positive integer
+def main():
+    number =get_number()
+    meaw(number)
 
-while n < 10:
-    print("meow")
-    n=n+1
+def get_number ():
+    while True:
+        n=int(input("whats n"))
+        if n >0:
+            break
+    return n
 
-
+def meaw(n):
+    for _ in range(n):
+        print("good")
+        print("bye")
